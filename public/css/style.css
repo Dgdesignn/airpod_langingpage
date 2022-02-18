@@ -1,0 +1,222 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+/*default transition*/
+.transicao{
+     transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+}
+
+/*all links style*/
+a{
+    text-decoration:none;
+    color:#202020;
+}
+/*change li color when mouse hover into the link*/
+a:hover li{
+    color:#0066FF;
+    cursor: pointer;
+}
+
+/*
+===========================================================
+--------------------- STYLING CABECALHO -------------------
+===========================================================
+*/
+.cabecalho{
+    min-height:60px;
+    width:100%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 1px 9px rgba(0,0,0,.1);
+}
+
+header{
+    width:min(720px,95%);
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 60px;
+    background-color: #fff;
+}
+
+header .logo{
+
+    font-weight: bold;
+}
+
+header .left-header{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+header .menu ul{
+    list-style: none;
+    display:flex;
+    gap:20px;
+}
+header .menu ul li{
+    font-size:12px;
+}
+
+header button{
+    border: none;
+    background-color: #0066FF;
+    color: #fff;
+    padding:6px 22px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: #0351c7;
+}
+/*END CABECALHO STYLE*/
+
+
+/*
+==================================================
+------------------- Banner area ------------------
+==================================================
+*/
+
+#detalhes{
+    padding-top: 60px;
+    width:min(720px,95%);
+    position: relative;
+    margin:auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+/*LEFT BANNER SIDE------------*/
+.banner-left{
+    width:min(390px,100%); 
+}
+
+.banner-left h1{
+    font-size:6rem;
+}
+
+.banner-left p{
+    font-size:.8rem;
+}
+
+.banner-left span{
+    display:block;
+    position:absolute;
+    bottom:20px;
+    left:40%;
+    font-size: .6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.banner-left span a{
+    width:18px;
+    margin:6px auto;
+}
+
+.banner-left span img{
+    width:100%;
+}
+/*RIGHT BANNER SIDE------------*/
+
+.banner-right{
+    width:min(300px,100%);
+    display: flex;
+    justify-content: center;
+}
+
+ img{
+    width:100%;
+}
+.banner-right figure{
+    width:142px;
+}
+/*========END BANNER AREA============*/
+
+
+/*
+=============================================
+-----STYLE ESPECICAÇÕES --------------------
+=============================================
+*/
+#especicacoes{
+    min-height:100vh;
+    margin:auto;
+    padding-top:60px;
+    width: min(720px, 95%);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:15%;
+}
+
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap:27px;
+}
+
+.card{
+    width:150px;
+    min-height:100px;
+    padding:10px;
+    text-align:center;
+    word-wrap: break-word;
+    display:flex;
+    flex-direction:column;
+}
+
+.card small{
+    font-size:1.8rem;
+}
+
+.card h3{
+    font-size: 3rem;
+
+}
+
+.card span{
+    font-size:.6rem;
+    letter-spacing: 1px;
+}
+
+
+.big-card figure {
+    width:256px;
+}
+
+
+/*
+========================================
+custom scrollbar========================
+========================================*/
+body::-webkit-scrollbar{
+    width:8px;
+    background-color: #ddd;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #0066FF30;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #0066FF;
+    border-radius: 50px;
+}
+

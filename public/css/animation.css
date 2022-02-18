@@ -1,0 +1,42 @@
+ .bounce-air{
+    animation:bounce .70s infinite alternate ease-in-out;
+}
+
+ .bounce-air-1{
+    animation:bounce-2 .70s infinite alternate ease-in-out;
+}
+
+@keyframes bounce{
+    from {
+        transform:translateY(-30px)
+    }
+
+    to{
+        transform:translateY(0)
+    }
+}
+
+@keyframes bounce-2{
+    from {
+        transform:translateX(-10px)
+    }
+
+    to{
+        transform:translateX(0)
+    }
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*when screen is 420px================*/
+@media all and (max-width:420px){
+    @keyframes bounce{
+        from {
+            transform:translateY(-20px)
+        }
+    }
+    
+}

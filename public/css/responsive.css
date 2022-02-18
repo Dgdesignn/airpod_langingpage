@@ -1,0 +1,82 @@
+@media all and (max-width:680px ) {
+
+
+    nav{
+        display:none;
+    }
+
+    /*
+    ============================================================
+    --------- Details Area
+    ===========================================================
+    */
+    /*detalhes-------------------*/
+    #detalhes{
+        justify-content: center;
+    }
+
+    /*banner left*/
+    .banner-left {
+        width:220px;
+        text-align: center;
+    }
+
+
+    .banner-left h1{
+        font-size:3.6rem;
+    }
+
+    /*banner right*/
+    .banner-right{
+        width:210px;
+    }
+
+    .banner-right figure{
+        width:100px;
+    }
+
+    /*
+        ==========================================================
+        Especification Area
+        ============================================================
+    */
+
+    .big-card figure{
+        width:150px;
+    }
+
+    .cards article h3{
+        font-size:2rem;
+    }
+
+}
+
+
+@media all and (max-width:420px){
+    #detalhes{
+        flex-direction:column;
+        gap: 20px;
+    }
+    .banner-right figure{
+        width:70px;
+    }
+
+    .banner-left h1{
+        font-size:3.5rem;
+        line-height: 1.6;
+    }
+
+    .banner-left {
+
+        width:90%;
+    }
+
+    #especicacoes{
+        gap: 10px;
+    }
+
+
+    .big-card figure{
+        width:100px;
+    }
+}
